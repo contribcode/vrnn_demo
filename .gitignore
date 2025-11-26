@@ -1,0 +1,15 @@
+# vs code
+.vscode/
+.env
+
+# lightning
+lightning_logs/
+
+# weights and biases
+wandb/
+
+# ignore all __pycache__ directories
+**/__pycache__
+
+# ignore directory that holds data
+data/
