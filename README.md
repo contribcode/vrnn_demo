@@ -1,8 +1,8 @@
-This repository implements the Variational Recurrent Neural Network in pure `PyTorch` and `PyTorch Lightning`. There is a demo training in the toy MNIST dataset.
+This repository implements the Variational Recurrent Neural Network (VRNN) in pure `PyTorch` using `PyTorch Lightning`. There is a demo training in the toy MNIST dataset.
 
 Feel free to open issues and discussions for improving the implementation.
 
-# Requirements:
+# Requirements
 
 * The repository was created with `Python 3.11` but newer versions compatible with the other libraries should also work.
 * `PyTorch 2.9.1`
