@@ -11,14 +11,14 @@ class Config:
             seed=42
         )
         self.data = DataConf(x_dim=1, num_classes=10, valid_size=10_000)
-        self.vrnn = VrnnConf(x_ft=16, h_dim=512, z_dim=64, z_ft=128)
+        self.vrnn = VrnnConf(x_ft=8, h_dim=1024, z_dim=256, z_ft=128)
         self.train = TrainConf(
             batch_size=64,
-            lr_vrnn=3e-5,
+            lr_vrnn=5e-6,
             lr=1e-3,
             max_epochs=10,
             val_check_interval=0.1,
-            patience=10,
+            patience=15,
             log_every_n_steps=10
         )
 
