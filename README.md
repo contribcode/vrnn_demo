@@ -1,6 +1,8 @@
-This repository implements the Variational Recurrent Neural Network (VRNN) in pure `PyTorch` using `PyTorch Lightning`. There is a demo training in the toy MNIST dataset.
+This repository implements the Variational Recurrent Neural Network (VRNN) in `PyTorch`. There is a demo with the MNIST dataset.
 
-Feel free to open issues and discussions for improving the implementation.
+This implementation is from *A Recurrent Latent Variable Model for Sequential Data*, Junyoung Chung et. all ([https://arxiv.org/abs/1506.02216](https://arxiv.org/abs/1506.02216)). The following image from the paper illustrates model's operations and its objective function.
+
+![VRNN operations and objective function](images/vrnn_operations_learning.png)
 
 # Requirements
 
@@ -10,3 +12,4 @@ Feel free to open issues and discussions for improving the implementation.
 * `torchmetrics 1.8.2`
 * `torchvision 0.24.1`
 
+Feel free to open issues and discussions for improvements.

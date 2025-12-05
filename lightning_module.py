@@ -15,6 +15,14 @@ class LitClf(L.LightningModule):
     def __init__(self, conf : Config) -> None:
         super(LitClf, self).__init__()
         self.conf = conf
+        self.save_hyperparameters(
+            {
+                'x_ft': conf.vrnn.x_ft,
+                'h_dim': conf.vrnn.h_dim,
+                'z_dim': conf.vrnn.z_dim,
+                'z_ft': conf.vrnn.z_ft
+            }
+        )
         self.rnn_model = VRNN(conf=conf)
         self.clf = nn.Linear(
             in_features=conf.vrnn.z_dim, out_features=conf.data.num_classes

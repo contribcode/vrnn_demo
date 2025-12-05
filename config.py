@@ -11,7 +11,7 @@ class Config:
             seed=42
         )
         self.data = DataConf(x_dim=1, num_classes=10, valid_size=10_000)
-        self.vrnn = VrnnConf(x_ft=8, h_dim=1024, z_dim=256, z_ft=128)
+        self.vrnn = VrnnConf(x_ft=8, h_dim=768, z_dim=256, z_ft=64)
         self.train = TrainConf(
             batch_size=64,
             lr_vrnn=5e-6,
